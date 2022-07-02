@@ -192,6 +192,22 @@ text-align: center;
 margin: 20px;
 }
 
+.boton {
+	background: #e9b8b0;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+
+
 .menu li{
 display: inline-block;
 text-align: center;
