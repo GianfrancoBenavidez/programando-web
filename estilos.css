@@ -84,7 +84,7 @@ body{
     padding-bottom: 5px;
     color:#e9b8b0;;
 }
-/*Fin de Estilos para el encabezado*/
+
 
 /*Menù lateral*/
 #btn-menu{
@@ -180,11 +180,11 @@ object-fit: cover;
 }
 
 ul.slider li:first-child {
-    opacity: 1; /*Mostramos el primer <li>*/
+    opacity: 1; 
 }
 
 ul.slider li:target {
-    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+    opacity: 1; 
 }
 
 .menu{
@@ -248,7 +248,7 @@ border-radius: 100%;
 .pie{
     padding: 20px;
     background-color: #d1ccc0;
-    font-size: center;
+    
     
 
 }
