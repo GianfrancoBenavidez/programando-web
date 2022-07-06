@@ -10,6 +10,7 @@ body{
     background: url(images/fondo\ marinera.jpeg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    background-position: ;
 }
 
 
@@ -29,6 +30,8 @@ body{
     height: 100px;
     position: fixed;
     top: 0;left: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.5);
 }
 .container{
     width: 90%;
@@ -78,6 +81,7 @@ body{
     border-bottom: 2px solid transparent;
     font-size: 15px;
     margin-right: 5px;
+    
 }
 .container .menu a:hover{
     border-bottom: 2px solid #c7c7c7;
@@ -91,7 +95,7 @@ body{
     display: none;    
 }
 .container-menu{
-    position: absolute;
+    position: fixed;
     background: rgba(0,0,0,0.5);
     width: 100%;
     height: 100vh;
@@ -99,6 +103,8 @@ body{
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 101;
+
 }
 #btn-menu:checked ~ .container-menu{
     opacity: 1;
@@ -145,7 +151,7 @@ body{
 .contenedorslider{
     margin: auto;
     background-color: white;
-    width: 800px;
+    width: 100%;
     padding: 30px;
     
 }
@@ -158,9 +164,10 @@ ul, li {
   
 ul.slider{
 position: relative;
-width: 800px;
-height: 500px;
+width: 100%;
+height: 800px;
 }
+
 
 ul.slider li {
     position: absolute;
@@ -171,13 +178,25 @@ ul.slider li {
     height: inherit;
     transition: opacity .5s;
     background:#fff;
+    
+    border-radius: 10px;
+
 }
 
-ul.slider li img{
-width: 100%;
-height: 300px;
-object-fit: cover;
+#slide1{
+    background-image: url("images/model.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
+
+#slide2{
+    background-image: url("images/tocado.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
 
 ul.slider li:first-child {
     opacity: 1; 
@@ -250,11 +269,12 @@ border-radius: 100%;
 	padding: 5px;
 	position: relative;
 	overflow: hidden;
-	background-size: cover;
-	background-position: center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-    height: auto;
-    width: auto;
+    height: 500px;
+    width: 100%;
     
     
 }
@@ -264,11 +284,23 @@ border-radius: 100%;
 .pie{
     padding: 20px;
     background-color: #d1ccc0;
+    text-align: center;
     
     
 
 }
 
+
+@media only screen and (max-width: 600px) {
+    .cardstocados {
+      grid-template-columns: 1fr;
+    
+    }
+    .header .menu {
+        display: none;
+    }
+    
+  }
 
   
       
