@@ -152,8 +152,7 @@ body{
     margin: auto;
     background-color: white;
     width: 100%;
-    padding: 30px;
-    
+    padding: 10px;    
 }
  
 ul, li {
@@ -185,17 +184,25 @@ ul.slider li {
 
 #slide1{
     background-image: url("images/model.png");
-    background-size: cover;
-    background-position: bottom;
+    background-size:cover;
+    background-position:bottom;
     background-repeat: no-repeat;
 }
 
 #slide2{
     background-image: url("images/tocado.png");
     background-size: cover;
-    background-position: bottom;
+    background-position:bottom;
     background-repeat: no-repeat;
 }
+
+#slide3{
+    background-image: url("images/baile.png");
+    background-size: cover;
+    background-position:bottom;
+    background-repeat: no-repeat;
+}
+
 
 
 ul.slider li:first-child {
